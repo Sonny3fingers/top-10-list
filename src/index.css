@@ -1,13 +1,93 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Lato:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+  background-color: aliceblue;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid rgb(11, 88, 156);
+  border-radius: 20px;
+}
+
+.app h1 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.app p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.app ul {
+  list-style-type: none;
+}
+
+.app ul li {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(43, 42, 42);
+  draggable: "true";
+  cursor: pointer;
+}
+
+.app ul li span {
+  margin-right: 10px;
+}
+
+.greyBackground {
+  background-color: rgb(187, 182, 182);
+}
+
+.red {
+  color: rgb(221, 90, 90);
+}
+
+.green {
+  /* color: rgb(119, 175, 119); */
+  background-color: lightgreen;
+}
+
+.app .checkBtn {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 6px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.app .checkBtn:active {
+  outline: none;
+  transform: scale(0.8);
+}
+
+.golden {
+  text-align: center;
+  font-size: 28px;
+  font-family: inherit;
+  font-weight: bold;
+  color: rgb(200, 174, 27);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(43, 42, 42);
 }
